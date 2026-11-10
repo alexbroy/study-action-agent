@@ -9,8 +9,6 @@ Students often receive useful AI advice but still have to copy it into notes and
 | Web (`dist/`) | HTML/CSS/JavaScript + IndexedDB | Create/read/delete browser notes, download .txt files, add/list/complete/delete task records |
 | Terminal (`python-cli/`) | Python 3.10+ + SQLite | Create/read/list/delete local files, manage task records, inspect system information |
 
-The web companion is JavaScript, not hosted Python. Browser notes live in site storage until downloaded; they cannot access arbitrary computer files. Both interfaces use Gemini JSON plans and independent action validation.
-
 ## Run
 
 Web: publish with the GitHub Pages steps in SUBMISSION.md, then open the deployed app URL, click **API settings**, and enter your own Gemini API key. Default model: `gemini-flash-lite-latest`. Each tester, including the instructor, needs a key for live mode. The key stays in tab memory, is sent only to Google, and clears on refresh. API availability/quota/billing depend on the tester's account. Get a key at https://aistudio.google.com/apikey.
@@ -66,9 +64,5 @@ Web files: core.js handles prompts/validation/API; app.js handles IndexedDB/exec
 `python3 -m unittest discover -s python-cli -v`: 12 Python tests for local actions, confirmations, audit, parameterized SQL, paths and mocked API errors.
 
 The original Python app worked with the user's Flash-Lite key. A live deployed web request still requires user verification. Offline tests do not prove live API availability. See the delivery message for browser and deployment verification results.
-
-## Submission
-
-See DEMO.md and SUBMISSION.md. Never upload keys, private workspace files, databases or logs to GitHub.
 
 References: https://ai.google.dev/api/generate-content and instructor video https://youtu.be/wcS2QUXKeP4.
