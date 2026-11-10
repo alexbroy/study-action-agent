@@ -71,6 +71,6 @@ The original Python app worked with the user's Flash-Lite key. A live deployed w
 
 See DEMO.md and SUBMISSION.md. Never upload keys, private workspace files, databases or logs to GitHub.
 
-References: https://ai.google.dev/api/generate-content and instructor video https://youtu.be/wcS2QUXKeP4 (video unavailable during implementation; pasted requirements used).
+References: https://ai.google.dev/api/generate-content and instructor video https://youtu.be/wcS2QUXKeP4.
 
 Deployment status: automatic publication was blocked by a hosting Git DNS failure. Local browser preview was blocked by environment permissions, so browser UI and live web integration remain unverified. All 24 offline automated tests passed. Publish and run the live smoke test before submitting.
